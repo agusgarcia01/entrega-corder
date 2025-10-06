@@ -1,0 +1,272 @@
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+header{
+    display: flex;
+    padding: 20px;
+    background-color: rgb(196, 196, 196);
+}
+
+
+header img{
+    width: 120px;
+    height: 120px;
+}
+
+header h1{
+    margin-left: 50px;
+    font-size: 40px;
+    letter-spacing: 25px;
+}
+
+.menu{
+    margin-top: 45px;
+    text-transform: uppercase;
+    display: flex;
+    list-style-type: none;
+    column-gap: 10%;
+    margin-left: 10px;
+}
+
+.menu a{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+
+.redes{
+    margin-top: 30px;
+    margin-left: 200px;
+    width: 150px;
+    height: 50px;
+}
+
+
+.bienvenida{
+    margin: 30px;
+    border-radius: 15px;
+    padding: 20px;
+    background-color: rgb(207, 207, 207);
+    text-align: center;
+}
+
+.bienvenida h1{
+    text-transform: uppercase;
+}
+
+.bienvenida h3{
+    font-weight: 400;
+}
+
+
+section{
+    display: flex;
+}
+
+
+.oferta {
+    display: flex;
+    width: 45%;
+    margin-left: 30px;
+    border-color: black;
+    border-style: ridge;
+    height: auto;
+}
+
+.oferta img{
+    width: 300px;
+    height: 400px;
+}
+
+.textoferta {
+    margin-left: 15px;
+    align-content: center;
+    padding: 30px;
+    text-align: center;
+}
+
+.textoferta h2{
+    text-transform: uppercase;
+    color: red;
+    font-size: 30px;   
+}
+
+.textoferta h3{
+    font-size: 20px;
+}
+
+.textoferta h4{
+    font-size: 13px;
+    font-weight: 100;
+}
+
+button{
+    background-color: black;
+    color: white;
+    text-transform: uppercase;
+    font-size: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.baterias{
+    text-align: center;
+    align-content: center;
+    margin-left: 10px;
+    width: 50%;
+    background-image: url(img/165.jpg);
+    background-size: cover;
+    height: 410px;
+}
+.baterias h2{
+    text-transform: uppercase;
+    font-size: 30px;
+    color: white;
+
+}
+
+
+
+
+
+
+
+.mainguitarras{
+    justify-content: center;
+    text-transform: uppercase;
+    display: flex;
+    padding: 100px;
+    text-align: center;
+}
+
+.mainguitarras div{
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+.mainguitarras div img{
+    width: 350px;
+    border: 3px solid black;
+}
+
+
+
+
+.mainbateria{
+    justify-content: center;
+    text-transform: uppercase;
+    display: flex;
+    padding: 100px;
+    text-align: center;
+}
+
+.mainbateria div{
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+.mainbateria div img{
+    width: 350px;
+    border: 3px solid black;
+}
+
+
+
+
+.mainservicio{
+    display: block;
+    background-color: black;
+}
+
+.mainservicio div{
+    height: 400px;
+    text-align: center;
+    align-content: center;
+    color: white;
+}
+
+.mainservicio h2{
+    text-transform: uppercase;
+
+}
+
+.mainservicio h3{
+    font-weight: 400;
+}
+
+
+.mainservicio .venta{
+    background-image: url(img/INSTRUMENTOS.jpg);
+    opacity: 60%;
+    background-size: cover;
+}.mainservicio .calibracion{
+    background-image: url(img/calibracion.jpg);
+    opacity: 60%;
+    background-size: cover;
+    background-position: bottom;
+}
+.mainservicio .clases{
+    background-image: url(img/CLASES.jpg);
+    opacity: 60%;
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+
+
+.maincontacto{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+}
+
+.info-contacto{
+    padding: 25px;
+    margin-right: 200px;
+}
+
+.form-container{
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.form-container input{
+    width: 300px;
+}
+
+.form-container textarea{
+    width: 300px;
+    resize: none;
+    height: 150px;
+}
+
+
+
+
+
+footer{
+    text-align: center;
+    margin-top: 20px;
+    display: block;
+    background-color: rgb(196, 196, 196);
+    padding: 15px;
+}
+
+footer nav{
+    margin-left: 290px;
+}
+
+.wpp{
+    width: auto;
+    position: fixed;
+    bottom: 80px;
+    right: 80px;
+}
+
+.wpp img{
+    width: 80px;
+}
