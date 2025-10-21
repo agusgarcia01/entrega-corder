@@ -1,6 +1,7 @@
 @charset "UTF-8";
 * {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: rgb(37, 37, 37);
 }
 
 header {
@@ -80,7 +81,7 @@ main .oferta div {
 }
 main .oferta div h2 {
   text-transform: uppercase;
-  color: red;
+  color: rgb(167, 0, 0);
   font-size: 30px;
 }
 main .oferta div h3 {
@@ -90,15 +91,7 @@ main .oferta div h4 {
   font-size: 13px;
   font-weight: 100;
 }
-main .oferta div button {
-  background-color: black;
-  color: white;
-  text-transform: uppercase;
-  font-size: 15px;
-  padding-left: 20px;
-  padding-right: 20px;
-}
-main .oferta div button:hover {
+main .oferta div .btn:hover {
   font-size: 18px;
 }
 main section {

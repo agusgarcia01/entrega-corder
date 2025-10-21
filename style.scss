@@ -1,11 +1,12 @@
-$color-principal: rgb(209, 206, 206);
-$color-texto-principal: rgb(37, 37, 37);
+$color-fondo: rgb(247, 247, 247);
+$color-texto: rgb(37, 37, 37);
 $color-texto-oferta: rgb(167, 0, 0);
 
 
 
 *{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: $color-texto;
 }
 
 
@@ -18,7 +19,7 @@ header{
     justify-content: space-between;
     padding: 20px 40px;
     opacity: 90%;
-    background-color: rgb(247, 247, 247);
+    background-color: $color-fondo;
     
     img{
         width: 120px;
@@ -107,7 +108,7 @@ main {
             
             h2{
                 text-transform: uppercase;
-                color: red;
+                color: $color-texto-oferta;
                 font-size: 30px;
             }  
             
@@ -120,16 +121,7 @@ main {
                 font-weight: 100;
             }
 
-            button{
-                background-color: black;
-                color: white;
-                text-transform: uppercase;
-                font-size: 15px;
-                padding-left: 20px;
-                padding-right: 20px;
-            }
-
-            button:hover{
+            .btn:hover{
                 font-size: 18px;
             }
         }
@@ -158,6 +150,13 @@ main {
         }
     }
 }
+
+
+
+
+
+
+
 
 
 
