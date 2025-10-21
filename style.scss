@@ -14,7 +14,9 @@ $color-texto-oferta: rgb(167, 0, 0);
 
 header{
     display: flex;
-    padding: 20px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 40px;
     opacity: 90%;
     background-color: rgb(247, 247, 247);
     
@@ -25,25 +27,25 @@ header{
 
     a{
         text-decoration: none;
+        color: inherit;
         
         h1{
-            margin-left: 50px;
-            margin-top: 30px;
-            margin-right: 50px;
+            margin: 0;
+            text-align: center;
             font-size: 40px;
             letter-spacing: 25px;
         }
     }
 
     .redes{
-        margin-top: 30px;
-        margin-left: 200px;
+        display: flex;
+        align-items: center;
         width: 150px;
         height: 50px;
     }
 
     nav div ul li{
-        font-weight: 800;
+        font-weight: 500;
     }
     nav div ul li:hover{
         font-weight: 800;
@@ -496,14 +498,37 @@ main {
 
 
 footer{
+    grid-template-areas: 
+    "telefono año localidad"
+    "redes redes redes";
     text-align: center;
-    margin-top: 20px;
-    display: block;
+    justify-items: center;
+    margin-top: 40px;
+    display: grid;
     background-color: rgb(196, 196, 196);
     padding: 15px;
 
-    nav{
-        margin-left: 290px;
+    h4{
+        font-size: 15px;
+    }
+
+    .telefono {
+        grid-area: telefono;
+    }
+
+    .año {
+        grid-area: año;
+    }
+
+    .localidad {
+        grid-area: localidad;
+    }
+
+    img{
+        grid-area: redes;
+        width: 160px;
+        height: auto;
+        margin-right: 40px;
     }
 }
 
