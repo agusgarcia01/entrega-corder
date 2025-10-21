@@ -1,0 +1,375 @@
+* {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+  display: flex;
+  padding: 20px;
+  opacity: 90%;
+  background-color: rgb(247, 247, 247);
+}
+header img {
+  width: 120px;
+  height: 120px;
+}
+header a {
+  text-decoration: none;
+}
+header a h1 {
+  margin-left: 50px;
+  margin-top: 30px;
+  margin-right: 50px;
+  font-size: 40px;
+  letter-spacing: 25px;
+}
+header .redes {
+  margin-top: 30px;
+  margin-left: 200px;
+  width: 150px;
+  height: 50px;
+}
+header nav div ul li {
+  font-weight: 800;
+}
+header nav div ul li:hover {
+  font-weight: 800;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 50%;
+  grid-template-rows: auto;
+  gap: 10px;
+  grid-template-areas: "welcome welcome" "oferta seccion";
+}
+main .bienvenida {
+  grid-area: welcome;
+  margin-top: 30px;
+  border-radius: 15px;
+  padding: 20px;
+  background-color: rgb(0, 0, 0);
+  text-align: center;
+  color: white;
+}
+main .bienvenida h1 {
+  text-transform: uppercase;
+}
+main .bienvenida h3 {
+  font-weight: 200;
+  font-size: 20px;
+}
+main .oferta {
+  background-color: rgb(255, 227, 176);
+  grid-area: oferta;
+  display: flex;
+  border-color: black;
+  border-style: ridge;
+}
+main .oferta img {
+  width: 300px;
+  height: auto;
+}
+main .oferta div {
+  margin-left: 15px;
+  align-content: center;
+  padding: 30px;
+  text-align: center;
+}
+main .oferta div h2 {
+  text-transform: uppercase;
+  color: red;
+  font-size: 30px;
+}
+main .oferta div h3 {
+  font-size: 20px;
+}
+main .oferta div h4 {
+  font-size: 13px;
+  font-weight: 100;
+}
+main .oferta div button {
+  background-color: black;
+  color: white;
+  text-transform: uppercase;
+  font-size: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+main .oferta div button:hover {
+  font-size: 18px;
+}
+main section {
+  grid-area: seccion;
+  background-image: url(img/165.jpg);
+  background-position: center;
+  align-content: center;
+}
+main section a {
+  text-decoration: none;
+}
+main section h2 {
+  text-align: center;
+  align-content: center;
+  background-image: url(img/165.jpg);
+  background-position: center;
+  text-transform: uppercase;
+  font-size: 30px;
+  color: white;
+}
+
+.mainguitarras {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  gap: 10px;
+  grid-template-areas: "electricas electro criollas";
+  text-transform: uppercase;
+  padding: 0px 100px;
+  text-align: center;
+}
+.mainguitarras div .electricas {
+  grid-area: electricas;
+}
+.mainguitarras div .electo {
+  grid-area: electro;
+}
+.mainguitarras div .criollas {
+  grid-area: criollas;
+}
+.mainguitarras div img {
+  width: 350px;
+}
+.mainguitarras div img:hover {
+  width: 400px;
+  height: auto;
+}
+
+.mainbateria {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: "electronicas acusticas percusion";
+  text-transform: uppercase;
+  padding: 0px 100px;
+  text-align: center;
+}
+.mainbateria div .electronicas {
+  grid-area: electronicas;
+}
+.mainbateria div .acusticas {
+  grid-area: acusticas;
+}
+.mainbateria div .percusion {
+  grid-area: percusion;
+}
+.mainbateria div img {
+  width: 350px;
+}
+.mainbateria div img:hover {
+  width: 400px;
+  height: auto;
+}
+
+.mainservicio {
+  display: grid;
+  grid-template-areas: "venta venta venta" "mante mante mante" "clases clases clases";
+  background-color: black;
+}
+.mainservicio div {
+  height: 400px;
+  text-align: center;
+  align-content: center;
+  color: white;
+}
+.mainservicio h2 {
+  text-transform: uppercase;
+}
+.mainservicio h3 {
+  font-weight: 400;
+}
+.mainservicio .venta {
+  grid-area: venta;
+  background-image: url(img/INSTRUMENTOS.jpg);
+  opacity: 60%;
+  background-size: cover;
+}
+.mainservicio .calibracion {
+  grid-area: mante;
+  background-image: url(img/calibracion.jpg);
+  opacity: 60%;
+  background-size: cover;
+  background-position: bottom;
+}
+.mainservicio .clases {
+  grid-area: clases;
+  background-image: url(img/CLASES.jpg);
+  opacity: 60%;
+  background-size: cover;
+  background-position: center;
+}
+
+.maincontacto {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+}
+.maincontacto .info-contacto {
+  padding: 25px;
+  margin-right: 200px;
+}
+.maincontacto .form-container {
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.maincontacto .form-container input {
+  width: 300px;
+}
+.maincontacto .form-container textarea {
+  width: 300px;
+  resize: none;
+  height: 150px;
+}
+
+.oferta-pagina {
+  display: grid;
+  padding: 80px;
+  grid-template-areas: "galeria imagen oferta" "info info info";
+  grid-template-columns: 80px auto 600px;
+  gap: 20px;
+}
+.oferta-pagina .galeria {
+  grid-area: galeria;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.oferta-pagina .galeria img {
+  width: 70px;
+  height: 70px;
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: border-color 0.2s, transform 0.2s;
+}
+.oferta-pagina .galeria img:hover {
+  transform: scale(1.05);
+}
+.oferta-pagina .galeria img.active {
+  border-color: #0e0f0f;
+}
+.oferta-pagina .imagen-principal {
+  grid-area: imagen;
+  background: #fff;
+  border-radius: 10px;
+  display: flex;
+  overflow: hidden;
+  border: 1px solid #e5e7eb;
+  justify-content: center;
+  align-items: center;
+}
+.oferta-pagina .imagen-principal img {
+  width: 500px;
+  height: auto;
+  transition: transform 0.3s ease;
+  cursor: zoom-in;
+}
+.oferta-pagina .imagen-principal img:hover {
+  transform: scale(1.1);
+}
+.oferta-pagina .info-producto {
+  grid-area: oferta;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.oferta-pagina .info-producto .sku {
+  color: #666;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+.oferta-pagina .info-producto .off {
+  color: #c0392b;
+  font-weight: bold;
+  margin: 8px 0;
+}
+.oferta-pagina .info-producto .precio {
+  font-size: 26px;
+  color: #000;
+  font-weight: 700;
+  margin: 0;
+}
+.oferta-pagina .info-producto .transferencia {
+  color: #c0392b;
+  font-weight: bold;
+  margin: 4px 0 20px;
+}
+.oferta-pagina .info-producto .btn-comprar {
+  background: #0e0f0f;
+  color: white;
+  border: none;
+  padding: 14px 26px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s;
+}
+.oferta-pagina .info-producto .btn-comprar:hover {
+  background: #16a085;
+  transform: translateY(-2px);
+}
+.oferta-pagina .descripcion {
+  grid-area: info;
+  color: #666;
+  margin-top: 20px;
+  line-height: 1.5;
+  font-size: 15px;
+}
+.oferta-pagina .descripcion h1 {
+  font-size: 24px;
+  margin: 0 0 10px;
+}
+.oferta-pagina .descripcion h2 {
+  font-size: 18px;
+  margin: 0 0 10px;
+}
+
+@media (max-width: 950px) {
+  .producto-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .galeria {
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  .imagen-principal {
+    height: 400px;
+  }
+  .info-producto {
+    text-align: left;
+  }
+}
+footer {
+  text-align: center;
+  margin-top: 20px;
+  display: block;
+  background-color: rgb(196, 196, 196);
+  padding: 15px;
+}
+footer nav {
+  margin-left: 290px;
+}
+
+.wpp {
+  width: auto;
+  position: fixed;
+  bottom: 80px;
+  right: 80px;
+}
+.wpp img {
+  width: 80px;
+}
+
+/*# sourceMappingURL=estilos.css.map */
