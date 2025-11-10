@@ -18,13 +18,18 @@ header{
     align-items: center;
     justify-content: space-between;
     padding: 20px 40px;
-    opacity: 90%;
+    opacity: 0.9;
     background-color: $color-fondo;
     
     img{
         width: 120px;
         height: 120px;
+        position: relative;
     }
+    .logo{
+        animation: logo-corazon 1.5s infinite ease-in-out;  
+    }
+
 
     a{
         text-decoration: none;
@@ -55,8 +60,6 @@ header{
 
 
 
-
-
 // INDEX
 
 main {
@@ -74,19 +77,63 @@ main {
         grid-area: welcome;
         margin-top: 30px;
         border-radius: 15px;
-        padding: 20px;
-        background-color: rgb(0, 0, 0);
+        height: 250px;
+        padding: 10px;
+        background-color: black;
+        position: relative;
         text-align: center;
-        color: white;
+        perspective: 1800px;
 
-        h1{
+        h1 {
             text-transform: uppercase;
         }
-        h3{
+
+        h3 {
             font-weight: 200;
             font-size: 20px;
         }
+
+        .flip-inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            transform-style: preserve-3d;
+            transition: transform 1s ease;
+        }
+
+        &:hover .flip-inner {
+            transform: rotateY(180deg);
+        }
+
+        .cara {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            border-radius: 15px;
+            padding: 20px;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+
+        .frente {
+            background-color: black;
+            transform: rotateY(0deg);
+        }
+
+        .dorso {
+            background-color: black;
+            transform: rotateY(180deg);
+        }
+        
     }
+
+
+
 
     .oferta {
         background-color: rgb(255, 227, 176);    
@@ -110,11 +157,18 @@ main {
                 text-transform: uppercase;
                 color: $color-texto-oferta;
                 font-size: 30px;
+                display: inline-block;
+                animation: oferta 2s infinite ease;
             }  
             
             h3{
                 font-size: 20px;
             }
+
+            .preciooferta{
+                animation: oferta-precio 0.5s infinite ease;
+            }
+            
 
             h4{
                 font-size: 13px;
@@ -540,4 +594,26 @@ footer{
         img{
             width: 80px;
         }
+}
+
+
+
+// ANIMACIONES
+
+@keyframes logo-corazon {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.15); }
+}
+
+
+@keyframes oferta {
+  0%   { transform: rotateY(0deg); }
+  35%  { transform: rotateY(360deg); } 
+  100% { transform: rotateY(360deg); } 
+}
+
+
+@keyframes oferta-precio {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.25); }
 }
